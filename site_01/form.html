@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../img/logo2x.png" />
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <section class="form">
+        <div class="conatiner">
+            <form action="https://formsubmit.co/consultec.asb@gmail.com" method="POST">
+                <h1>Entre em contato</h1>
+                <p>Preencha os campos obrigatórios</p>
+                <div class="input-single">
+                    <input type="text" name="name" id="nome-box" class="input" autocomplete="off" required>
+                    <label for="nome-box">Nome e sobrenome</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="email" name="email" id="email-box" class="input" autocomplete="off" required>
+                    <label for="email-box">E-mail</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="subject" id="subject" class="input" autocomplete="off" required>
+                    <label for="subject">Assunto</label>
+                </div>
+
+                <div class="input-single">
+                    <textarea name="message" id="message" class="input" autocomplete="off" placeholder="Mensagem"></textarea>
+                    <!-- <label for="message">Mensagem</label> -->
+                </div>
+       
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/resposta.html"/>
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato, em breve responderemos!"/>
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
+                <input type="hidden" name="_template" value="table">
+
+                <div class="btn">
+                    <button type="submit" value="enviar">Enviar</button>
+                    <!-- <input type="submit" value="Enviar"> -->
+                </div>
+
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
